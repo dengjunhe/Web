@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="icon" href="djh.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum=1.0,user-scalable=no">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        .word{
+        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        background: linear-gradient(90deg, #ffd89b 0%, #19547b 100%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        }
+        video{
+            display: block;
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 60px;
+        }
+        .video-container{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #ffd89b 0%, #19547b 100%);
+        }
+        .phtot img{
+            display: flex;
+            min-width: 100px;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+        }
+        .word h1{
+            color: #d7e605;
+            font-size: 2.6em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .word p,p1,p2{
+            color:#050505;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+            line-height: 1.8;
+            text-align: center;
+        }
+        .word hr{
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid rgba(255,255,255,0.3);
+            margin: 25px 0;
+        }
+        .word a {
+            color: #326ce0;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 8px 20px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 30px;
+            margin: 10px 0;
+            transition: background 0.3s;
+        }
+        .word a:hover {
+            background: rgba(99, 82, 82, 0.3);
+        }
+        .word abbr {
+            color: #25238d;
+            cursor: help;
+            font-size: 1.1rem;
+        }
+        .word input {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 30px;
+            margin: 10px 5px;
+            width: 200px;
+        }
+        .word button {
+            padding: 8px 24px;
+            border: none;
+            border-radius: 30px;
+            background: #ffd89b;
+            color: #19547b;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .word button:hover {
+            transform: scale(1.05);
+        }
+        .word em {
+            color: rgba(255,255,255,0.8);
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Dengjunhe's Site</title>
+</head>
+<body>
+    <div class="word">
+        <h1>Welcome to Dengjunhe's Site</h1>
+        <hr>
+        <p1>Hello, I'm Dengjunhe,I'm very glad to have you here!</p1>
+        <p2>I'm a student who still has a lot to learn about web development.<br/>
+        But I'm excited to share my journey with you.<br/>
+        This site is a place where I can show my projects.<br/>
+        Also a place toshare my thoughts.<br/>
+        And connect with others who are interested in web development!<br/>
+        </p2>
+        <a href="https://dengjunhe.site" target="_blank">Click here to visit my site</a><br/>
+        <hr>
+        <abbr title="Dengjunhe is a real name.">Dengjunhe</abbr><br/>
+        <div class="phtot">
+            <img src="djh.png" alt="This is Dengjunhe's photo" width="100" height="100"><br/>
+        </div>
+        <hr>
+        <p2>Do you want to connect with me?</p2><input type="text" placeholder="Enter your Email">
+        <button onclick="alert('Your Email has been submitted!')">Submit</button><br/>
+        <em>Note: I will get back to you as soon as possible.</em><br/>
+        <hr>
+    </div>
+    <div class="video-container">
+        <video src="djh.mp4" autoplay controls></video>
+    </div>
+</body>
+</html>
